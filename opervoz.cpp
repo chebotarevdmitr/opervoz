@@ -3,16 +3,11 @@
 using namespace std;
 
 bool isPrimeNumber(int number){
- bool isPrimeFlag=true;
  for (int i=2; i < number; i++)
  {
- 	if(number%i==0)
-    {
-    	isPrimeFlag=false;
-    	break;
- 	}	
+ 	if(number%i==0)return false;	
  }
- return isPrimeFlag;	
+ return true;	
 }
 
 int main() {
