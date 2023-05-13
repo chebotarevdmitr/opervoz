@@ -2,13 +2,9 @@
 
 using namespace std;
 
-int main() {
-	
- int number	;
- cout<<"Number: ";
- cin>> number;
+bool isPrimeNumber(int number){
  bool isPrimeFlag=true;
- for (int i=2; i<number; i++)
+ for (int i=2; i < number; i++)
  {
  	if(number%i==0)
     {
@@ -16,6 +12,18 @@ int main() {
     	break;
  	}	
  }
+ return isPrimeFlag;	
+}
+
+int main() {
+	
+ int number	;
+ cout<<"Number: ";
+ cin>> number;
+ 
+  bool isPrimeFlag = isPrimeNumber(number);
+  
+  
 	if(isPrimeFlag)	
 	  cout<<"prime number"<<endl;
 	else
