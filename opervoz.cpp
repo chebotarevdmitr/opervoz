@@ -12,17 +12,11 @@ bool isPrimeNumber(int number){
 
 int main() {
 	
- int number	;
- cout<<"Number: ";
- cin>> number;
- 
-  bool isPrimeFlag = isPrimeNumber(number);
-  
-  
-	if(isPrimeFlag)	
-	  cout<<"prime number"<<endl;
-	else
-	   cout<<"Not prime number";  
+   for(int i=1;i<=1000;i++){
+   	bool isPrime =isPrimeNumber(i);
+   	if(isPrime)
+   	 cout<<i<<"is prime number\n";
+   }
 	  
 	system("pause>o");
 }
